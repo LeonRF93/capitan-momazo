@@ -1,0 +1,154 @@
+
+@font-face {
+    font-family: 'FuenteMomazo';
+/*     src: url('fonts/MiFuente-Regular.woff2') format('woff2'),
+         url('fonts/MiFuente-Regular.woff') format('woff'); */
+    src: url("fonts/POSTERABLE.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ----------------------- HEADER ----------------------- */
+
+header {
+    font-family: 'FuenteMomazo';
+    color: rgb(224, 238, 27);
+    background-color: rgb(5, 112, 19);
+    padding-top: 10%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;     /* Centra verticalmente la imagen y el texto */
+    justify-content: center;  /* Centra horizontalmente el contenido */
+    text-align: center;  
+}
+
+.logo img{
+    width: 50px;
+}
+
+/* ----------------------- HEADER ----------------------- */
+
+
+/* ----------------------- NAVBAR ----------------------- */
+
+nav {
+    background-color: rgb(4, 82, 14);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.5s ease, transform 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(224, 238, 27);
+}
+
+/* ----------------------- NAVBAR ----------------------- */
+
+
+/* ----------------------- FONDO HEADER ----------------------- */
+
+.hero {
+    background: url("img/momazo fondo.jpg") no-repeat center center;
+    background-size: 100% 100%;
+    text-align: center;
+    padding: 50px 0;
+    height: 35em;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+/* ----------------------- FONDO HEADER ----------------------- */
+
+.productos {
+    padding: 20px;
+    text-align: center;
+}
+
+.productos h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.producto {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+.producto h4 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+.producto p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.producto button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.producto button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: rgb(5, 112, 19);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
