@@ -100,9 +100,21 @@ nav ul li a:hover {
 
 /* ----------------------- FONDO HEADER ----------------------- */
 
+
+/* ----------------------- PRODUCTOS ----------------------- */
+
+h3 {
+    text-align: center;
+    font-size: 3em;
+}
+
 .productos {
     padding: 20px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap; /* Los productos se envuelven a la siguiente línea cuando no hay espacio */
+    gap: 2%;
+    justify-content: center; /* Alinea los productos al centro */
 }
 
 .productos h3 {
@@ -111,31 +123,32 @@ nav ul li a:hover {
 }
 
 .producto {
-    display: inline-block;
-    width: 30%;
+    width: 20%;
+    height: 40em;
     margin: 10px;
     padding: 15px;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
 }
 
 .producto img {
     width: 100%;
-    height: auto;
+    height: 75%;
 }
 
 .producto h4 {
-    font-size: 1.25rem;
-    margin: 10px 0;
+    padding-top: 10%;
+    font-size: 1.5em;
 }
 
-.producto p {
+/* .producto p {
     font-size: 1.1rem;
     margin-bottom: 10px;
-}
+} */
 
-.producto button {
+/* .producto button {
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
@@ -145,7 +158,11 @@ nav ul li a:hover {
 
 .producto button:hover {
     background-color: #555;
-}
+} */
+
+
+/* ----------------------- PRODUCTOS ----------------------- */
+
 
 footer {
     background-color: rgb(5, 112, 19);
@@ -153,12 +170,65 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: 20px;
+
 }
 
 
 /* ----------------------- MEDIA QUERIES ----------------------- Importante poner abajo de todo */
 
+@media (max-width: 1600px) { /* cuanto menor sea la medidad, mayor tiene que ser la resolucion para ajustarse*/
+
+    .productos {
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap; /* Los productos se envuelven a la siguiente línea cuando no hay espacio */
+        gap: 0%;
+        justify-content: center; /* Alinea los productos al centro */
+    }
+    
+    .producto {
+        width: 23%;
+        height: 40em;
+        margin: 10px;
+        padding: 15px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    }
+
+
+}
+
+@media (max-width: 800px) { /* cuanto menor sea la medidad, mayor tiene que ser la resolucion para ajustarse*/
+    
+    .producto {
+        width: 40%;
+        height: 40em;
+        margin: 10px;
+        padding: 15px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    }
+
+
+}
+
 @media (max-width: 600px) { /* cuanto menor sea la medidad, mayor tiene que ser la resolucion para ajustarse*/
+
+    .producto {
+        width: 70%;
+        height: 40em;
+        margin: 10px;
+        padding: 15px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+    }
 
     .logo {
         font-size: 15px;
