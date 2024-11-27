@@ -31,6 +31,21 @@ window.addEventListener('click', event => {
 /* agergar producto */
 
 document.addEventListener('DOMContentLoaded', () => {
+
+        // Guardar el carrito en Local Storage
+    function guardarCarritoEnLocalStorage() {
+        localStorage.setItem('carrito', JSON.stringify(carritoArray));
+    }
+
+    // Cargar el carrito desde Local Storage
+    function cargarCarritoDesdeLocalStorage() {
+        const carritoGuardado = localStorage.getItem('carrito');
+        if (carritoGuardado) {
+            carritoArray.push(...JSON.parse(carritoGuardado));
+            actualizarCarrito(); // Actualiza la interfaz del carrito con los datos cargados
+        }
+    }
+    
     const carritoArray = [];
     const listaCarrito = document.getElementById('listaCarrito');
     const totalCarrito = document.getElementById('total');
@@ -50,6 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
 
                 actualizarCarrito();
+                guardarCarritoEnLocalStorage(); // Guarda el carrito actualizado
             } else {
                 console.error('Error: datos inválidos', { nombre, precio });
             }
@@ -83,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     carritoArray.splice(index, 1); // Eliminar el producto si la cantidad es 0
                 }
                 actualizarCarrito(); // Actualizar el carrito
+                guardarCarritoEnLocalStorage(); // Guarda el carrito actualizado
             });
 
             li.appendChild(botonEliminar);
@@ -93,6 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         totalCarrito.textContent = Math.round(total);
     }
+    cargarCarritoDesdeLocalStorage();
 });
 
 

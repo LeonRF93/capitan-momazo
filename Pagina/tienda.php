@@ -54,7 +54,7 @@
     // Verificar si el término de búsqueda no está vacío antes de mostrar el mensaje
     if ($producto_buscar != '') {
         // Consulta SQL para obtener los productos que coinciden con el término de búsqueda
-        $sql = "SELECT nombre_historieta, portada, precio FROM historietas WHERE nombre_historieta LIKE '%$producto_buscar%'";
+        $sql = "SELECT nombre_historieta, portada, precio, descripcion, year, editorial FROM historietas WHERE nombre_historieta LIKE '%$producto_buscar%'";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
@@ -70,7 +70,13 @@
                 echo "<h4>" . $producto['nombre_historieta'] . "</h4>";
                 echo "<h5>$" . $producto['precio'] . "</h5>";
                 echo "<button class='btn-añadir' data-nombre='" . $producto['nombre_historieta'] . "' data-precio='" . $producto['precio'] . "'>Añadir al carrito</button>";
-                echo "<button class='btn-añadir'>Mas info.</button>";
+                echo "<a href='producto.php?nombre=" . urlencode($producto['nombre_historieta']) . 
+                "&imagen=" . urlencode($producto['portada']) . 
+                "&precio=" . urlencode($producto['precio']) . 
+                "&descripcion=" . urlencode($producto['descripcion']) .
+                "&editorial=" . urlencode($producto['editorial']) . 
+                "&year=" . urlencode($producto['year']) . 
+                "' class='btn-añadir'>Más info.</a>";
                 echo "</div>";
             }
         } else {
@@ -87,7 +93,7 @@
     <section class="productos">
         <?php
         // Consulta SQL para obtener los nombres de los productos
-        $sql = "SELECT nombre_historieta, portada, precio FROM historietas";
+        $sql = "SELECT nombre_historieta, portada, precio, descripcion, year, editorial FROM historietas";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
@@ -100,7 +106,13 @@
                 echo "<h4>" . $producto['nombre_historieta'] . "</h4>";
                 echo "<h5>$" . $producto['precio'] . "</h5>";
                 echo "<button class='btn-añadir' data-nombre='" . $producto['nombre_historieta'] . "' data-precio='" . $producto['precio'] . "'>Añadir al carrito</button>";
-                echo "<button class='btn-añadir'>Mas info.</button>";
+                echo "<a href='producto.php?nombre=" . urlencode($producto['nombre_historieta']) . 
+                "&imagen=" . urlencode($producto['portada']) . 
+                "&precio=" . urlencode($producto['precio']) . 
+                "&descripcion=" . urlencode($producto['descripcion']) .
+                "&editorial=" . urlencode($producto['editorial']) . 
+                "&year=" . urlencode($producto['year']) . 
+                "' class='btn-añadir'>Más info.</a>";
                 echo "</div>";
             }
         } else {
