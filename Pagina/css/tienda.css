@@ -1,0 +1,320 @@
+@font-face { 
+    font-family: 'FuenteMomazo';
+/*     src: url('fonts/MiFuente-Regular.woff2') format('woff2'),
+         url('fonts/MiFuente-Regular.woff') format('woff'); */
+    src: url("../fonts/POSTERABLE.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+} 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ----------------------- HEADER ----------------------- */
+
+header {
+    font-family: 'FuenteMomazo';
+    color: rgb(224, 238, 27);
+    background-color: rgb(4, 82, 14);
+    padding-top: 7%;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* ----------------------- HEADER ----------------------- */
+
+
+/* ----------------------- BARRA DE BUSQUEDA -----------------------*/
+
+.resultado{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 200%;
+    color: #aaa;
+    padding-top: 1%;
+    width: 100%;
+}
+
+/* ----------------------- BARRA DE BUSQUEDA -----------------------*/
+
+/* ----------------------- NAVBAR ----------------------- */
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other content */
+    background-color: rgb(4, 82, 14);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.5s ease, transform 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(224, 238, 27);
+}
+
+#carrito {
+    cursor: pointer;
+}
+
+/* ----------------------- NAVBAR ----------------------- */
+
+
+
+/* ----------------------- PRODUCTOS ----------------------- */
+
+h3 {
+    text-align: center;
+    font-size: 400%;
+}
+
+.productos {
+    border: #333 1px solid;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap; /* Los productos se envuelven a la siguiente línea cuando no hay espacio */
+    gap: 1%;
+    justify-content: center; /* Alinea los productos al centro */
+}
+
+.producto {
+    width: 15%;
+    margin: 0.6%;
+    padding: 0.5%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
+}
+
+.producto img {
+    width: 100%;
+    height: 60%;
+}
+
+.producto h4 {
+    font-size: 140%;
+}
+
+.producto h5 {
+    color: rgb(215, 205, 0);
+}
+
+.btn-añadir {
+    background-color: #28a745; /* Verde */
+    font-size: 90%;
+    color: white;
+    border: none;
+    padding: 5% 3%;
+    margin-left: 2%;
+    border-radius: 7%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-añadir:hover {
+    background-color: #218838; /* Verde más oscuro */
+}
+
+
+/* ----------------------- PRODUCTOS ----------------------- */
+
+
+/* ----------------------- MODAL ----------------------- */
+
+.modal{
+    display: none; /* Oculto por defecto */
+    position: fixed; /* hace que se ponga x encima de la pantalla sin arrastrar todo x debajo */
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+}
+
+.modal-content {
+    max-height: 80vh; /* Altura máxima del modal (80% de la ventana) */
+    overflow-y: auto; /* Activar desplazamiento vertical si es necesario */
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    margin-top: 7%;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    border-radius: 5px;
+}
+
+#listaCarrito {
+    list-style: none;
+    color: rgb(5, 112, 19);
+    border: black 1px solid;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.close-button:hover {
+    color: rgb(215, 205, 0);
+    transition: color 0.3s ease; /* Transición suave de 0.3 segundos */
+}
+
+.itemsLista{
+    color: rgb(224, 238, 27);
+    font-size: 70%;
+}
+
+.contTotal{
+    display: flex;
+    font-style: oblique;
+    align-items: center; /* Alineación vertical centrada, es necesario xq se coje todo cuando se actualiza el valor con js */
+}
+
+#totalTexto {
+    color: rgb(215, 205, 0);
+}
+
+#total{
+    color: rgb(215, 205, 0);
+}
+
+#comprar {
+    color: rgb(215, 205, 0);
+    cursor: pointer;
+    text-align: center;
+    background-color: #218838;
+    font-size: 150%;
+    border-radius: 5px;
+}
+
+/* ----------------------- MODAL ----------------------- */
+
+
+footer {
+    background-color: rgb(5, 112, 19);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+
+}
+
+
+/* ----------------------- MEDIA QUERIES ----------------------- Importante poner abajo de todo */
+
+@media (max-width: 1600px) { /* cuanto menor sea la medidad, mayor tiene que ser la resolucion para ajustarse*/
+
+
+}
+
+@media (max-width: 1400px) { 
+
+    .producto h4{
+        font-size: 80%;
+    }
+
+    .btn-añadir {
+        font-size: 70%;
+     }
+
+}
+
+@media (max-width: 800px) { /* cuanto menor sea la medidad, mayor tiene que ser la resolucion para ajustarse*/
+    
+    .producto {
+        font-size: 70%;
+    }
+
+}
+
+@media (max-width: 600px) { /* cuanto menor sea la medidad, mayor tiene que ser la resolucion para ajustarse*/
+
+    .producto {
+        font-size: 50%;
+    }
+
+    .btn-añadir {
+        margin-top: 2%;
+    }
+
+    .logo{
+        font-size: 15px;
+    }
+
+    .logo img {
+        width: 100px;
+    }
+
+    nav {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 400px) { /* cuanto menor sea la medidad, mayor tiene que ser la resolucion para ajustarse*/
+
+    .producto {
+        font-size: 6px;
+    }
+
+    .btn-añadir {
+        margin-top: 1%;
+    }
+
+
+    .logo {
+        font-size: 10px;
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    nav {
+        font-size: 6px;
+    }
+
+}
+
+/* ----------------------- MEDIA QUERIES ----------------------- */
