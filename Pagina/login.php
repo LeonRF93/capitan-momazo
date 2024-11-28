@@ -81,7 +81,7 @@ $conn->close();
             <button type="submit" class="btn">Iniciar sesión</button>
         </form>
         <div class="register-link">
-            <p>¿No tienes cuenta? <a href="registro.php">Registrarse</a></p>
+            <p>¿No tienes cuenta? <a href="signin.php">Registrarse</a></p>
             <h5><a href="index.php">Volver al inicio</a></h5>
         </div>
     </div>
