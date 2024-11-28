@@ -37,7 +37,7 @@ $isLoggedIn = isset($_SESSION['user_email']);
                         <p>0</p>
                     </div>
                 </div>
-                <h4 id="comprar">COMPRAR</h4>
+                <a href="compra.php"><h4 id="comprar">COMPRAR</h4></a>
             </div>
         </div>
 
