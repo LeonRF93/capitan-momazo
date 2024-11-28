@@ -1,3 +1,14 @@
+<?php
+session_start(); // Inicia la sesión
+
+// Verificar si el usuario está logueado
+$isLoggedIn = isset($_SESSION['user_email']);
+?>
+
+<?php if (!$isLoggedIn): ?>
+    $email = $_SESSION['user_email']; // Obtén el correo electrónico de la sesión
+    <?php endif; ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head> 
@@ -9,10 +20,6 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <?php
-    include 'conexion.php'; // Conecta el archivo a la base de datos
-    ?>
-    
     <div class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
@@ -33,11 +40,26 @@
     <header>
     <nav>
             <ul>
-                <li><a id="carrito" ><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+            <?php if (!$isLoggedIn): ?>
+                                    <li><a href="login.php"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                                <?php endif; ?>
+
+                                <!-- Mostrar 'Cerrar sesión' si está logueado -->
+                                <?php if ($isLoggedIn): ?>
+                                    <li><a id="carrito" ><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                                <?php endif; ?>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="tienda.php">Productos</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#quienes_somos">Quienes somos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <?php if (!$isLoggedIn): ?>
+                                    <li><a href="login.php">Iniciar sesión</a></li>
+                                <?php endif; ?>
+
+                                <!-- Mostrar 'Cerrar sesión' si está logueado -->
+                                <?php if ($isLoggedIn): ?>
+                                    <li><a href="logout.php" id="btn-logout">Cerrar sesión</a></li>
+                                <?php endif; ?>
             </ul>
         </nav>
         <div class="logo">
@@ -51,35 +73,25 @@
         <!-- Comentado: <h2>Bienvenidos a Nuestra Tienda</h2><p>Encuentra lo mejor aquí</p> -->
     </section>
 
-    <h3>Nuestros Productos</h3>
-    <section class="productos">
-        <?php
-        // Consulta SQL para obtener los nombres de los productos
-        $sql = "SELECT nombre_historieta, portada, precio FROM historietas";
-        $result = $conn->query($sql);
+    <div id="quienes_somos" class="section">
+        <div class="contquienes">
+        <img src="img/quienes_somos.jpg" alt="quienes somos">
+        <p>¡Somos la comiqueria Capítan Momazo! Tito Calderón, más conocido como Capitán Momazo, es un humilde repartidor de fideos que ganó poderes al luchar contra su archienemigo "Virus Eh". Ofrecemos los mejores mangas y cómics para alimentar tu pasión por las aventuras. Explorá colecciones épicas y sumérgete en un universo donde siempre hay algo nuevo por descubrir. Únete a nuestra misión: ¡Banear el aburrimiento de la rutina! 💥</p>
+        </div>
+    </div>
 
-        if ($result->num_rows > 0) {
-            // Recorremos los productos
-            while ($producto = $result->fetch_assoc()) {
-                echo "<div class='producto'>";
-                // Mostrar la imagen del producto
-                echo "<img src='" . $producto['portada'] . "' alt='" . $producto['nombre_historieta'] . "' class='producto-imagen'>"; 
-                // Mostrar el nombre del producto
-                echo "<h4>" . $producto['nombre_historieta'] . "</h4>";
-                echo "<h5>$" . $producto['precio'] . "</h5>";
-                echo "<button class='btn-añadir' data-nombre='" . $producto['nombre_historieta'] . "' data-precio='" . $producto['precio'] . "'>Añadir al carrito</button>";
-                echo "<button class='btn-añadir'>Mas info.</button>";
-                echo "</div>";
-            }
-        } else {
-            echo "<p>No hay productos disponibles.</p>";
-        }
-        
-        ?>
-    </section>
+    <div id="contacto" class="section">
+    <img src="img/contacto.jpg" alt="quienes somos">
+        <ul>
+        <li><i class="fa-regular fa-envelope"></i> capitanmomazo@gmail.com</li>
+        <li><i class="fa-solid fa-phone"></i> 11 43561197</li>
+        <li><i class="fa-brands fa-instagram"></i> gero.momo</li>
+        <li></li>
+        </ul>
+    </div>
 
     <footer>
-        <p>&copy; 2024 Capitan Momazo - Todos los derechos reservados</p>
+        <p>&copy; 2024 Capitan Momazo</p>
     </footer>
     <script src="js/main.js"></script>
 </body>

@@ -44,10 +44,10 @@ CREATE TABLE `historietas` (
 --
 
 INSERT INTO `historietas` (`Id_Historieta`, `nombre_historieta`, `tipo`, `precio`, `editorial`, `stock`, `descripcion`, `year`, `portada`) VALUES
-(1, 'One Piece', 'Manga', 15000, 'Shueisha', 40, 'Las aventuras de un joven pirata y su búsqueda del tesoro.', 1997, 'portadas/onepiece.jpg'),
+(1, 'One Piece', 'Manga', 15000, 'Shueisha', 40, 'Las aventuras de un joven pirata y su búsqueda del tesoro.', 1997, 'portadas/onepiece.jpeg'),
 (2, 'Naruto', 'Manga', 14000, 'Shueisha', 35, 'Las aventuras de un joven ninja en busca de reconocimiento.', 1999, 'portadas/naruto.png'),
 (3, 'Dragon Ball', 'Manga', 15000, 'Shueisha', 30, 'Las aventuras de un guerrero en su búsqueda de las esferas del dragón.', 1984, 'portadas/dragonball.png'),
-(4, 'My Hero Academia', 'Manga', 14000, 'Shueisha', 30, 'Un joven con sueños de ser héroe en un mundo lleno de superpoderes.', 2014, 'portadas/mha.jpg'),
+(4, 'My Hero Academia', 'Manga', 14000, 'Shueisha', 30, 'Un joven con sueños de ser héroe en un mundo lleno de superpoderes.', 2014, 'portadas/mha.jpeg'),
 (5, 'Attack on Titan', 'Manga', 12000, 'Kodansha', 25, 'La lucha de la humanidad contra gigantes devoradores.', 2009, 'portadas/snk.png'),
 (6, 'Death Note', 'Manga', 10000, 'Shueisha', 40, 'Un joven encuentra un cuaderno que puede matar a cualquier persona cuyo nombre escriba en él.', 2003,'portadas/death note.jpg'),
 (7, 'Demon Slayer', 'Manga', 13000, 'Shueisha', 35, 'Un joven lucha contra demonios para salvar a su hermana.', 2016, 'portadas/demon slayer.jpg'),
@@ -65,17 +65,17 @@ INSERT INTO `historietas` (`Id_Historieta`, `nombre_historieta`, `tipo`, `precio
 (19, 'Made in Abyss', 'Manga', 13000, 'Kodansha', 20, 'Las aventuras de una niña y su amigo en un abismo misterioso.', 2012, 'portadas/made in abyss.jpg'),
 (20, 'Batman: Year One', 'Cómic', 9000, 'DC Comics', 50, 'La historia de los inicios de Batman en Gotham City.', 1987, 'portadas/batman year one.png'),
 (21, 'Spider-Man: Homecoming', 'Cómic', 12000, 'Marvel Comics', 30, 'Las aventuras de Spider-Man mientras navega su vida como adolescente y superhéroe.', 2017, 'portadas/spiderman homecoming.png'),
-(22, 'Blue Exorcist', 'Manga', 10000, 'Shueisha', 35, 'Un joven descubre que es el hijo de Satanás y lucha contra demonios.', 2009, 'portadas/blue exorcist. jpg'),
+(22, 'Blue Exorcist', 'Manga', 10000, 'Shueisha', 35, 'Un joven descubre que es el hijo de Satanás y lucha contra demonios.', 2009, 'portadas/blue exorcist.jpg'),
 (23, 'Gintama', 'Manga', 9500, 'Shueisha', 40, 'Las locuras de un samurái en un mundo lleno de alienígenas.', 2004, 'portadas/gintama.jpg'),
 (24, 'Vinland Saga', 'Manga', 12000, 'Kodansha', 25, 'La historia de un joven guerrero vikingo.', 2005, 'portadas/vinland saga.png'),
-(25, 'Mob Psycho 100', 'Manga', 9500, 'Shogakukan', 40, 'Las aventuras de un joven psíquico.', 2012, 'portadas/mob psycho.jpg'),
+(25, 'Mob Psycho 100', 'Manga', 9500, 'Shogakukan', 40, 'Las aventuras de un joven psíquico.', 2012, 'portadas/mob pyscho.jpg'),
 (26, 'Fairy Tail: 100 Years Quest', 'Manga', 9500, 'Kodansha', 40, 'Las nuevas aventuras del gremio Fairy Tail.', 2018, 'portadas/fairy tail 100.jpg'),
 (27, 'Tokyo Revengers', 'Manga', 11000, 'Kodansha', 30, 'Un joven viaja en el tiempo para salvar a su novia.', 2017, 'portadas/tokyo revengers.jpg'),
 (28, 'Noragami', 'Manga', 8000, 'Kodansha', 50, 'Las aventuras de un dios menor en busca de seguidores.', 2011, 'portadas/noragami.jpg'),
-(29, 'Shingeki no Kyojin: Before the Fall', 'Manga', 12000, 'Kodansha', 30, 'Una precuela del famoso Attack on Titan.', 2011, 'portadas/snk bft.jpg'),
+(29, 'Shingeki no Kyojin: Before the Fall', 'Manga', 12000, 'Kodansha', 30, 'Una precuela del famoso Attack on Titan.', 2011, 'portadas/snk btf.jpg'),
 (30, 'KonoSuba', 'Manga', 9000, 'KADOKAWA', 50, 'Las desventuras de un joven en un mundo de fantasía.', 2013, 'portadas/konosuba.jpg'),
-(31, 'Jujutsu Kaisen', 'Manga', 10000, 'Shueisha', 35, 'Un joven se une a una escuela de hechicería para luchar contra maldiciones.', 2018, 'portadas/jujutsu kaizen.jpg'),
-(32, 'Fate/Zero', 'Manga', 12000, 'TYPE-MOON', 25, 'La historia de la guerra por el Santo Grial.', 2006, 'portadas.fate zero.jpg'),
+(31, 'Jujutsu Kaisen', 'Manga', 10000, 'Shueisha', 35, 'Un joven se une a una escuela de hechicería para luchar contra maldiciones.', 2018, 'portadas/jujutsu kaisen.jpg'),
+(32, 'Fate/Zero', 'Manga', 12000, 'TYPE-MOON', 25, 'La historia de la guerra por el Santo Grial.', 2006, 'portadas/fate zero.jpg'),
 (33, 'The Promised Neverland', 'Manga', 11000, 'Shueisha', 30, 'Un grupo de niños descubre un oscuro secreto.', 2016, 'portadas/the promised neverland.jpg'),
 (34, 'Komi Can’t Communicate', 'Manga', 9000, 'Shogakukan', 50, 'La historia de una chica con problemas para comunicarse.', 2016, 'portadas/komi.jpg'),
 (35, 'Parasyte', 'Manga', 12000, 'Kodansha', 25, 'Un joven lucha contra parásitos que controlan a los humanos.', 1988, 'portadas/parasyte.jpg'),
@@ -83,13 +83,13 @@ INSERT INTO `historietas` (`Id_Historieta`, `nombre_historieta`, `tipo`, `precio
 (37, 'Rave Master', 'Manga', 8000, 'Kodansha', 50, 'Un joven busca las piezas de un antiguo artefacto.', 2001, 'portadas/rave master.jpg'),
 (38, 'Horimiya', 'Manga', 9000, 'Square Enix', 45, 'La historia de amor entre dos estudiantes.', 2011, 'portadas/horimiya.jpg'),
 (39, 'Nanbaka', 'Manga', 9500, 'Shueisha', 40, 'Las aventuras de prisioneros en una cárcel.', 2014, 'portadas/nanbaka.jpg'),
-(40, 'Ao Haru Ride', 'Manga', 9500, 'Shueisha', 40, 'Una historia de amor y amistad en la escuela secundaria.', 2011, 'portadas/ao haru ride.jpg'),
+(40, 'Ao Haru Ride', 'Manga', 9500, 'Shueisha', 40, 'Una historia de amor y amistad en la escuela secundaria.', 2011, 'portadas/au haru ride.jpg'),
 (41, 'Kaguya-sama: Love is War', 'Manga', 8500, 'Shueisha', 50, 'Una guerra de ingenio entre dos estudiantes que se enamoran.', 2015, 'portadas/love is war.jpg'),
-(42, 'Skip Beat!', 'Manga', 9500, 'Hakusensha', 40, 'La historia de una chica que busca venganza en la industria del entretenimiento.', 2002, 'portadas/skip beat.jpg'),
+(42, 'Skip Beat!', 'Manga', 9500, 'Hakusensha', 40, 'La historia de una chica que busca venganza en la industria del entretenimiento.', 2002, 'portadas/skip beata.jpg'),
 (43, 'Magi: The Labyrinth of Magic', 'Manga', 11000, 'Kodansha', 30, 'Las aventuras de Aladdin y sus amigos en un mundo mágico.', 2009, 'portadas/magi.png'),
 (44, 'Kono Oto Tomare!', 'Manga', 8500, 'Shueisha', 50, 'Un grupo de estudiantes se une para aprender a tocar el koto.', 2012, 'portadas/kono.jpg'),
 (45, 'Yona of the Dawn', 'Manga', 9000, 'Hakusensha', 40, 'La historia de una princesa que se convierte en guerrera.', 2009, 'portadas/yona.jpg'),
-(46, 'Btooom!', 'Manga', 9500, 'Shogakukan', 40, 'Un joven es atrapado en un juego mortal.', 2009, 'portadas/btooom.jpg'),
+(46, 'Btooom!', 'Manga', 9500, 'Shogakukan', 40, 'Un joven es atrapado en un juego mortal.', 2009, 'portadas/btooom.png'),
 (47, 'Kimi ni Todoke', 'Manga', 9000, 'Shueisha', 40, 'La historia de una chica que lucha por hacer amigos.', 2005, 'portadas/kimi.jpg'),
 (48, 'Genshiken', 'Manga', 9000, 'Kodansha', 40, 'Un grupo de otakus explora la cultura del anime y manga.', 2002, 'portadas/genshiken.png'),
 (49, 'Akame ga Kill!', 'Manga', 10000, 'Square Enix', 35, 'La lucha de un grupo de asesinos contra un imperio corrupto.', 2010, 'portadas/akame.jpg'),
@@ -101,7 +101,7 @@ INSERT INTO `historietas` (`Id_Historieta`, `nombre_historieta`, `tipo`, `precio
 (55, 'Nana', 'Manga', 12000, 'Shōjo Beat', 35, 'La historia de dos chicas llamadas Nana que se convierten en mejores amigas.', 2002, 'portadas/nana.jpg'),
 (56, 'Re:Zero - Starting Life in Another World', 'Manga', 10000, 'KADOKAWA', 30, 'Un joven es transportado a otro mundo y descubre un poder especial.', 2014, 'portadas/re_zero_starting_life_in_another_world.jpg'),
 (57, 'Akira', 'Manga', 15000, 'Kodansha', 40, 'Una historia de ciencia ficción post-apocalíptica en Tokio.', 1984, 'portadas/akira.jpg'),
-(58, 'Hellboy', 'Cómic', 12000, 'Dark Horse Comics', 25, 'Las aventuras de un demonio que lucha contra criaturas sobrenaturales.', 1993, 'portadas/hellboy.jgp'),
+(58, 'Hellboy', 'Cómic', 12000, 'Dark Horse Comics', 25, 'Las aventuras de un demonio que lucha contra criaturas sobrenaturales.', 1993, 'portadas/hellboy.jpg'),
 (59, 'Sandman', 'Cómic', 15000, 'DC Comics', 30, 'La historia de Morfeo, el rey de los sueños.', 1989, 'portadas/sandman.jpg'),
 (60, 'Saga', 'Cómic', 13000, 'Image Comics', 40, 'Una épica de ciencia ficción sobre amor y guerra.', 2012, 'portadas/saga.jpg'),
 (61, 'Locke & Key', 'Cómic', 13000, 'IDW Publishing', 30, 'Un grupo de hermanos enfrenta los secretos de su familia en una casa mágica.', 2008, 'portadas/locke_and_key.jpg'),
@@ -117,7 +117,7 @@ INSERT INTO `historietas` (`Id_Historieta`, `nombre_historieta`, `tipo`, `precio
 (71, 'Bunny Drop', 'Manga', 9500, 'Enterbrain', 40, 'La vida de un hombre que se convierte en el cuidador de una niña.', 2005, 'portadas/usagi_drop.png'),
 (72, 'Chobits', 'Manga', 9000, 'Kodansha', 40, 'Una historia de amor entre un hombre y una chica androide.', 2000, 'portadas/chobits.jpg'),
 (73, 'Tokyo Ghoul:re', 'Manga', 11000, 'Shueisha', 30, 'Continuación de la historia de Tokyo Ghoul con nuevos personajes.', 2014, 'portadas/tokyo_ghoul_re.jpg'),
-(74, 'One-Punch Man', 'Manga', 10000, 'Shueisha', 35, 'Las aventuras de un héroe que puede derrotar a cualquier enemigo de un solo golpe.', 2012, 'portadas/one_punch_man.png'),
+(74, 'K-ON!', 'Manga', 10000, 'Kronk', 35, 'El mejor manga de la historia', 2007, 'portadas/kon.png'),
 (75, 'The Seven Deadly Sins', 'Manga', 12000, 'Kodansha', 30, 'Un grupo de caballeros que luchan contra el mal.', 2012, 'portadas/The_seven_deadly_sins.jpg'),
 (76, 'Fruits Basket', 'Manga', 9500, 'Tokyopop', 50, 'La vida de una chica que se involucra con una familia maldita.', 1998, 'portadas/fruits_basket.jpg'),
 (77, 'A Silent Voice', 'Manga', 9000, 'Kodansha', 40, 'Un joven busca redimirse por haber acosado a una niña sorda.', 2013, 'portadas/a_silent_voice.jpg'),
@@ -216,67 +216,67 @@ INSERT INTO `pedidos` (`Id_Pedido`, `ID_Usuario`, `ID_Historieta`, `Fecha_pedido
 -- Estructura de tabla para la tabla `usuario`
 --
 
-CREATE TABLE `usuario` (
+CREATE TABLE `usuarios` (
   `Id_Usuario` int(10) NOT NULL,
-  `nombre_usuario` varchar(50) DEFAULT NULL,
-  `password` varchar(50) NOT NULL
+  `email` varchar(50) DEFAULT NULL,
+  `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Volcado de datos para la tabla `usuario`
 --
 
-INSERT INTO `usuario` (`Id_Usuario`, `nombre_usuario`, `password`) VALUES
-(1, 'SpidermanFan', 'WebShooter123'),
-(2, 'SailorMoonLover', 'MoonTiaraMagic!'),
-(3, 'BatmanWatcher', 'DarkKnight1989'),
-(4, 'NarutoNinja', 'RamenLover!'),
-(5, 'WonderWomanWarrior', 'AmazonianStrength'),
-(6, 'OnePieceExplorer', 'PirateKingGolD!'),
-(7, 'DragonBallFan', 'Kamehameha!'),
-(8, 'XMenMutant', 'MutantPower99'),
-(9, 'DaredevilDaredevil', 'BlindJustice!'),
-(10, 'DeathNoteWatcher', 'ShinigamiPower!'),
-(11, 'GokuUltraInstinct', 'SpiritBomb!'),
-(12, 'HarleyQuinnFan', 'JokerLovesMe#'),
-(13, 'AttackOnTitanFan', 'TitanSlayer!'),
-(14, 'MangaMaster', 'OtakuLife@2024'),
-(15, 'ThorHammerHero', 'Mjolnir!123'),
-(16, 'SupermanFan', 'KryptonianStrength'),
-(17, 'MyHeroAcademiaFan', 'PlusUltra@2024'),
-(18, 'AvengersAssemble', 'InfinityWar!'),
-(19, 'FairyTailMage', 'MagicPower!123'),
-(20, 'YuGiOhDuelist', 'DuelMonsters@!'),
-(21, 'BleachSoulReaper', 'Zangetsu!'),
-(22, 'FlashSpeedster', 'FastestManAlive!'),
-(23, 'WolverineClaw', 'Snikt!123'),
-(24, 'OnePunchManFan', 'SaitamaPower@'),
-(25, 'SpideySense', 'FriendlyNeighborhood!'),
-(26, 'FullmetalAlchemist', 'AlchemyRules@2024'),
-(27, 'VenomFan', 'SymbioteLife!'),
-(28, 'ScoobyDooFan', 'MysteryMachine!'),
-(29, 'JusticeLeagueHero', 'SuperPowerTeam!'),
-(30, 'GothamGuardian', 'CrimeFighter@'),
-(31, 'InuyashaFan', 'HalfDemonPower!'),
-(32, 'SwordArtOnlineFan', 'VirtualReality@!'),
-(33, 'DeathStarPilot', 'MayTheForceBeWithYou!'),
-(34, 'NarutoSage', 'ShadowCloneJutsu!'),
-(35, 'CaptainAmericaHero', 'ShieldOfJustice!'),
-(36, 'MangaMagician', 'SpellCaster@2024'),
-(37, 'AkiraFan', 'NeoTokyo!'),
-(38, 'DeadpoolFan', 'MercWithAMouth!'),
-(39, 'KonoSubaFan', 'Explosion@2024'),
-(40, 'ZeldaHero', 'Triforce!'),
-(41, 'PokemonTrainer', 'Pikachu!@'),
-(42, 'TokyoGhoulFan', 'GhoulLife!'),
-(43, 'BerserkFan', 'BrandOfSacrifice!'),
-(44, 'GhibliLover', 'SpiritedAway@!'),
-(45, 'JujutsuKaisenFan', 'CurseTechnique!'),
-(46, 'BlackWidowHero', 'AssassinSkills!'),
-(47, 'AvatarFan', 'WaterEarthFireAir!'),
-(48, 'OnePunchHero', 'SeriousPunch!'),
-(49, 'KenshinRurouni', 'BattousaiPower@'),
-(50, 'GhibliMagic', 'CastleInTheSky@!');
+INSERT INTO `usuarios` (`Id_Usuario`, `email`, `password`) VALUES
+(1, 'SpidermanFan@gmail.com', 'WebShooter123'),
+(2, 'SailorMoonLover@gmail.com', 'MoonTiaraMagic!'),
+(3, 'BatmanWatcher@gmail.com', 'DarkKnight1989'),
+(4, 'NarutoNinja@gmail.com', 'RamenLover!'),
+(5, 'WonderWomanWarrior@gmail.com', 'AmazonianStrength'),
+(6, 'OnePieceExplorer@gmail.com', 'PirateKingGolD!'),
+(7, 'DragonBallFan@gmail.com', 'Kamehameha!'),
+(8, 'XMenMutant@gmail.com', 'MutantPower99'),
+(9, 'DaredevilDaredevil@gmail.com', 'BlindJustice!'),
+(10, 'DeathNoteWatcher@gmail.com', 'ShinigamiPower!'),
+(11, 'GokuUltraInstinct@gmail.com', 'SpiritBomb!'),
+(12, 'HarleyQuinnFan@gmail.com', 'JokerLovesMe#'),
+(13, 'AttackOnTitanFan@gmail.com', 'TitanSlayer!'),
+(14, 'MangaMaster@gmail.com', 'OtakuLife@2024'),
+(15, 'ThorHammerHero@gmail.com', 'Mjolnir!123'),
+(16, 'SupermanFan@gmail.com', 'KryptonianStrength'),
+(17, 'MyHeroAcademiaFan@gmail.com', 'PlusUltra@2024'),
+(18, 'AvengersAssemble@gmail.com', 'InfinityWar!'),
+(19, 'FairyTailMage@gmail.com', 'MagicPower!123'),
+(20, 'YuGiOhDuelist@gmail.com', 'DuelMonsters@!'),
+(21, 'BleachSoulReaper@gmail.com', 'Zangetsu!'),
+(22, 'FlashSpeedster@gmail.com', 'FastestManAlive!'),
+(23, 'WolverineClaw@gmail.com', 'Snikt!123'),
+(24, 'OnePunchManFan@gmail.com', 'SaitamaPower@'),
+(25, 'SpideySense@gmail.com', 'FriendlyNeighborhood!'),
+(26, 'FullmetalAlchemist@gmail.com', 'AlchemyRules@2024'),
+(27, 'VenomFan@gmail.com', 'SymbioteLife!'),
+(28, 'ScoobyDooFan@gmail.com', 'MysteryMachine!'),
+(29, 'JusticeLeagueHero@gmail.com', 'SuperPowerTeam!'),
+(30, 'GothamGuardian@gmail.com', 'CrimeFighter@'),
+(31, 'InuyashaFan@gmail.com', 'HalfDemonPower!'),
+(32, 'SwordArtOnlineFan@gmail.com', 'VirtualReality@!'),
+(33, 'DeathStarPilot@gmail.com', 'MayTheForceBeWithYou!'),
+(34, 'NarutoSage@gmail.com', 'ShadowCloneJutsu!'),
+(35, 'CaptainAmericaHero@gmail.com', 'ShieldOfJustice!'),
+(36, 'MangaMagician@gmail.com', 'SpellCaster@2024'),
+(37, 'AkiraFan@gmail.com', 'NeoTokyo!'),
+(38, 'DeadpoolFan@gmail.com', 'MercWithAMouth!'),
+(39, 'KonoSubaFan@gmail.com', 'Explosion@2024'),
+(40, 'ZeldaHero@gmail.com', 'Triforce!'),
+(41, 'PokemonTrainer@gmail.com', 'Pikachu!@'),
+(42, 'TokyoGhoulFan@gmail.com', 'GhoulLife!'),
+(43, 'BerserkFan@gmail.com', 'BrandOfSacrifice!'),
+(44, 'GhibliLover@gmail.com', 'SpiritedAway@!'),
+(45, 'JujutsuKaisenFan@gmail.com', 'CurseTechnique!'),
+(46, 'BlackWidowHero@gmail.com', 'AssassinSkills!'),
+(47, 'AvatarFan@gmail.com', 'WaterEarthFireAir!'),
+(48, 'OnePunchHero@gmail.com', 'SeriousPunch!'),
+(49, 'KenshinRurouni@gmail.com', 'BattousaiPower@'),
+(50, 'GhibliMagic@gmail.com', 'CastleInTheSky@!');
 
 --
 -- Índices para tablas volcadas
@@ -298,7 +298,7 @@ ALTER TABLE `pedidos`
 --
 -- Indices de la tabla `usuario`
 --
-ALTER TABLE `usuario`
+ALTER TABLE `usuarios`
   ADD PRIMARY KEY (`Id_Usuario`);
 
 --
@@ -314,7 +314,7 @@ ALTER TABLE `historietas`
 --
 -- AUTO_INCREMENT de la tabla `usuario`
 --
-ALTER TABLE `usuario`
+ALTER TABLE `usuarios`
   MODIFY `Id_Usuario` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
@@ -325,7 +325,7 @@ ALTER TABLE `usuario`
 -- Filtros para la tabla `pedidos`
 --
 ALTER TABLE `pedidos`
-  ADD CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`ID_Usuario`) REFERENCES `usuario` (`Id_Usuario`),
+  ADD CONSTRAINT `pedidos_ibfk_1` FOREIGN KEY (`ID_Usuario`) REFERENCES `usuarios` (`Id_Usuario`),
   ADD CONSTRAINT `pedidos_ibfk_2` FOREIGN KEY (`ID_Historieta`) REFERENCES `historietas` (`Id_Historieta`);
 COMMIT;
 

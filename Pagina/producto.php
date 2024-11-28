@@ -1,3 +1,14 @@
+<?php
+session_start(); // Inicia la sesión
+
+// Verificar si el usuario está logueado
+$isLoggedIn = isset($_SESSION['user_email']);
+?>
+
+<?php if (!$isLoggedIn): ?>
+    $email = $_SESSION['user_email']; // Obtén el correo electrónico de la sesión
+    <?php endif; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,12 +44,27 @@
 
 <header>
     <nav>
-            <ul>
-                <li><a id="carrito" ><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+    <ul>
+            <?php if (!$isLoggedIn): ?>
+                                    <li><a href="login.php"><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                                <?php endif; ?>
+
+                                <!-- Mostrar 'Cerrar sesión' si está logueado -->
+                                <?php if ($isLoggedIn): ?>
+                                    <li><a id="carrito" ><i class="fas fa-shopping-cart"></i> Carrito</a></li>
+                                <?php endif; ?>
                 <li><a href="index.php">Inicio</a></li>
                 <li><a href="tienda.php">Productos</a></li>
-                <li><a href="#">Sobre Nosotros</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="index.php #quienes_somos">Quienes somos</a></li>
+                <li><a href="index.php #contacto">Contacto</a></li>
+                <?php if (!$isLoggedIn): ?>
+                                    <li><a href="login.php">Iniciar sesión</a></li>
+                                <?php endif; ?>
+
+                                <!-- Mostrar 'Cerrar sesión' si está logueado -->
+                                <?php if ($isLoggedIn): ?>
+                                    <li><a href="logout.php">Cerrar sesión</a></li>
+                                <?php endif; ?>
             </ul>
         </nav>
     </header>

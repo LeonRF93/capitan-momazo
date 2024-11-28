@@ -111,6 +111,14 @@ document.addEventListener('DOMContentLoaded', () => {
         totalCarrito.textContent = Math.round(total);
     }
     cargarCarritoDesdeLocalStorage();
+
+    // Función para vaciar el carrito
+    function vaciarCarrito() {
+        carritoArray.length = 0; // Vaciar el array del carrito
+        localStorage.removeItem('carrito'); // Eliminar el carrito del localStorage
+        actualizarCarrito(); // Actualizar la interfaz
+    }   
+
 });
 
 

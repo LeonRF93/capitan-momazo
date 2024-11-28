@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -111,64 +115,6 @@ nav ul li a:hover {
 /* ----------------------- FONDO HEADER ----------------------- */
 
 
-/* ----------------------- PRODUCTOS ----------------------- */
-
-h3 {
-    text-align: center;
-    font-size: 400%;
-}
-
-.productos {
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap; /* Los productos se envuelven a la siguiente línea cuando no hay espacio */
-    gap: 1%;
-    justify-content: center; /* Alinea los productos al centro */
-}
-
-.producto {
-    width: 15%;
-    margin: 0.6%;
-    padding: 0.5%;
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño total */
-}
-
-.producto img {
-    width: 100%;
-    height: 60%;
-}
-
-.producto h4 {
-    font-size: 140%;
-}
-
-.producto h5 {
-    color: rgb(215, 205, 0);
-}
- 
-.btn-añadir {
-    background-color: #28a745; /* Verde */
-    font-size: 90%;
-    color: white;
-    border: none;
-    padding: 5% 3%;
-    margin-left: 2%;
-    border-radius: 7%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.btn-añadir:hover {
-    background-color: #218838; /* Verde más oscuro */
-}
-
-
-/* ----------------------- PRODUCTOS ----------------------- */
-
-
 /* ----------------------- MODAL ----------------------- */
 
 .modal{
@@ -248,12 +194,58 @@ h3 {
 /* ----------------------- MODAL ----------------------- */
 
 
+/* ----------------------- QUIENES SOMOS Y CONTACTO ----------------------- */
+
+#quienes_somos {
+    padding: 1%;
+}
+
+#quienes_somos p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;
+    border: #333 1px solid;
+    padding: 0.5%;
+    width: 40%;
+}
+
+#quienes_somos img{
+    border: #333 1px solid;
+    width: 60%;
+}
+
+.contquienes {
+    display: flex;
+    border: solid rgb(213, 213, 213) 2px;
+}
+
+#contacto img{
+    margin: 0;
+    width: 100%;
+    height: 85vh;
+    display: block; /* Asegura que no genere espacio extra como elemento inline-block */
+}
+
+#contacto ul{
+    margin: 0;
+    background-color: rgb(4, 82, 14);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 150%;
+    border: #333 1px solid;
+    padding: 0.5%;
+}
+
+/* ----------------------- QUIENES SOMOS ----------------------- */
+
 footer {
     background-color: rgb(5, 112, 19);
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
 
 }
 
